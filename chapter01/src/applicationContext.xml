@@ -5,6 +5,10 @@
         http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
 
     <bean id="userDao" class="com.itheima.ioc.UserDaoImpl" />
+    
+    <bean id="userService" class="com.itheima.ioc.UserServiceImpl">
+    	<property name="userDao" ref="userDao" />
+    </bean>
 
     <!-- more bean definitions go here -->
 

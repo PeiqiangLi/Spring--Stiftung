@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/lipeiqiang/GitHub/springBasics/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1521884578.index
+3298342685.index
+3961506248.index
+1043674325.index
+3177709707.index
+1436116840.index

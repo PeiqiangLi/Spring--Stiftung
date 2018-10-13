@@ -3,8 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-	
+	<!-- 先构造实例化MyBean3Factory -->
 	<bean id="myBean3Factory" class="com.itheima.instance.factory.MyBean3Factory" />
+	<!-- 调用MyBean3Factory中的createBean -->
 	<bean id="bean3" factory-bean="myBean3Factory" factory-method="createBean"></bean>
 	        
 </beans>

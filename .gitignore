@@ -1,4 +1,19 @@
+# for Mac OS X System Files
 .DS_Store
 */.DS_Store
 /.metadata/
 /.recommenders/
+.gitignore
+
+# for Eclipse
+.project
+.metadata/
+.settings/
+.classpath
+.loadpath
+
+# for IDEA
+*/build/*
+.idea
+*.iml
+/out/*

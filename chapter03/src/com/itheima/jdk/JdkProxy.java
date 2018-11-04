@@ -20,6 +20,7 @@ public class JdkProxy implements InvocationHandler {
 		//类加载器
 		ClassLoader classLoader = JdkProxy.class.getClassLoader();
 		//被代理对象实现的所有接口
+		@SuppressWarnings("rawtypes")
 		Class[] clazz = userDao.getClass().getInterfaces();
 		//使用代理类，进行增强，返回的是代理后的对象
 		return Proxy.newProxyInstance(classLoader, clazz, this);//this指代理类本身

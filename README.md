@@ -18,3 +18,8 @@ Spring AOP的实现<br/>
 
 2.基于代理的AOP实现<br/>
 * 使用ProxyFactoryBean创建AOP代理
+
+### AspectJ开发
+例子中使用了JoinPoint接口及其子接口ProceedingJoinPoint作为参数来获得目标对象的类名、目标方法名和目标方法参数等。<br/>
+使用@Aspect注解定义了切面类，由于该类在Spring中是作为组件使用的，所以还需要添加@Component注解才能生效。<br/>
+使用@Poincut注解来配置切入点表达式，并通过定义返回值为void、方法体为空的方法来命名切入点。
